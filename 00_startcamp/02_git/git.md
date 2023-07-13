@@ -36,6 +36,7 @@ $ git commit -m "commit message"
 ```bash
 $ git config --global user.email "edward626kr@naver.com"
 $ git config --global user.name "이승집"
+$ git config --global --list
 ```
 
 ### commit 기록 확인하기
@@ -43,7 +44,23 @@ $ git config --global user.name "이승집"
 $ git log 
 ```
 
-### 메모장(vlm모드) --> 수정상태(insert) ---> ESC(수정상태 종료) --->wq(저장후 종료)
+### 메모장(vim모드) --> 수정상태(insert) ---> ESC(수정상태 종료) --->wq(저장후 종료)
 ```bash
 $ git commit --amend
+```
+
+
+### git 설정 초기화
+```bash
+# vim을 활용해서 설정 제거하기
+# vim git 설정 파일 열기
+$ vim ~/.gitconfig
+# insert 키 : 수정 상태 만들기
+# --insert--인 상태에서 모든 내용 삭제
+# esc로 수정상태 종료
+# :wq
+```
+
+```bash
+$ git push origin master
 ```

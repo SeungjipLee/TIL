@@ -5,6 +5,10 @@
 ```bash
 $ mkdir new_folder
 ```
+- 새 파일 만들기
+```bash
+$ touch 파일명
+```
 
 - 작업 위치를 new_folder로 이동
 ```bash
