@@ -42,3 +42,8 @@ $ git config --global user.name "이승집"
 ```bash
 $ git log 
 ```
+
+### 메모장(vlm모드) --> 수정상태(insert) ---> ESC(수정상태 종료) --->wq(저장후 종료)
+```bash
+$ git commit --amend
+```
