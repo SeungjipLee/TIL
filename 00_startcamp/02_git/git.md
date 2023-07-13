@@ -75,3 +75,8 @@ $ git push origin master
 ```bash
 git clone repository_url
 ```
+
+### 집에서 수정한 내용을 강의장 컴퓨터에서 받을 때
+```bash
+$ git pull origin master
+```
