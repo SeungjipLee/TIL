@@ -62,7 +62,7 @@ $ vim ~/.gitconfig
 ```
 ### 원격 저장소 git에 등록
 ```bash
-$ gir remote add {remote_nickname} {remote_url}
+$ git remote add {remote_nickname} {remote_url}
 ```
 
 ### 원격 저장소에 업로드
