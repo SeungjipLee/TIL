@@ -34,6 +34,10 @@
 #         quit()
 
 # ----------------------시간 초과-----------------------------------------
-A = input()
-A = A.upper()
-M = 0
+A = [chr(i) for i in range(ord('A'), ord('Z')+1)]
+B = [0]*26
+a = 0
+N = input()
+N = N.upper()
+for i in range(26):
+    B[i] = N.count(A[i])
