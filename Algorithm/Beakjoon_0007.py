@@ -40,4 +40,7 @@ a = 0
 N = input()
 N = N.upper()
 for i in range(26):
-    B[i] = N.count(A[i])
+    if A[i] in N:
+        B[i] = N.count(A[i])
+print(B)
+    
