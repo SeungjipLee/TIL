@@ -13,10 +13,36 @@
 
 # 출력
 # 출력해야하는 명령이 주어질 때마다, 한 줄에 하나씩 출력한다.
-N = int(input())
+import sys
+input=sys.stdin.readline
+
+TC = int(input())
 Li = []
-def push(n):
-    Li.append(n)
-def pop():
-    Li.remove(Li.sort()[-1])
-    
+
+for i in list(range(TC)):
+    A = input().split()
+
+    if A[0] == 'push':
+        Li.append(A[1])
+
+    elif A[0] == 'pop':
+        if len(Li) == 0:
+            print(-1)
+        else :
+            print(Li.pop())
+
+
+    elif A[0] == 'size':
+        print(len(Li))
+
+    elif A[0] == 'empty':
+        if len(Li) == 0:
+            print(1)
+        else :
+            print(0)
+
+    else:
+        if len(Li) == 0:
+            print(-1)
+        else :
+            print(Li[-1])
