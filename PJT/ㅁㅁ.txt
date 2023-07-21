@@ -1,0 +1,11 @@
+kor_co_nm : 금융회사 명   			1 ㅂㅇㅅ
+fin_prdt_cd : 금융 상품명			2  ㅇㅅ
+
+금융 상품코드가 같은 놈들 모아라 fin_prdt_cd ㅇㅅ
+
+금리 정보 안에 : 
+		저축금리유형(intr_rate_type) 		3 ㅇㅅ
+		저축금리유형명(intr_rate_type_nm) 	4 ㅇㅅ
+		저축 기간(save_trm), 		5 ㅇㅅ
+		저축 금리(intr_rate) 		6 ㅇㅅ
+		최고 우대금리(intr_rate2)		7 ㅇㅅ
