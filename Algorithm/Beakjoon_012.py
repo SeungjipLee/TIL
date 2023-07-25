@@ -37,13 +37,23 @@ for i in range(Commit_case):
             pass
         else :
             Str_list = list(Text[:Curser])
-            Str_list.pop()
+            Str_list.pop(Curser-1)
             Text = ''.join(Str_list) + Text[Curser:]
             Len -= 1
-            Curser += 1
+            Curser -= 1
 
 
     else :
-        Text = (Text[:Curser] + Commit[-1] + Text[Curser:])
+        if Curser == 0:
+            Text = Commit[-1] + Text
+            Curser += 1
+        
+        elif Curser == len(Text):
+            Text = Text + Commit[-1]
+            Curser += 1
+        
+        else :
+            Text = (Text[:Curser] + Commit[-1] + Text[Curser:])
+            Curser += 1
 
 print(Text)
