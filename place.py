@@ -27,3 +27,10 @@ for index in range(0,len(students),6): #range(n --> 0 ~ n-1)
     print()
 #6. ctrl + alt + 방향키 위, 아래 | 포커싱 증가
 #7. alt + 방향키 | 포커싱 되어있는 줄 위치 이동
+
+
+
+# 0 0 0     0 0 0
+# 0 0 0     0 0 0
+# 0 0 0     0 0 0
+# 0 0 0     0 0 0
