@@ -14,7 +14,7 @@ def DFS(n):
         if visited[now] == 0: # 출발점도 중복방지를 위해 방문표시
             visited[now] = 1
             Path.append(now)  # 현 위치 경로에 추가
-            for next in range(1, V+1):  # 내가 갈 수 있는 애들 조사(행 조사)
+            for next in range(V, 0, -1):  # 내가 갈 수 있는 애들 조사(행 조사)
                 # 갈 수 있는 조건 : 연결되어 있으며, 방문표시 안 된 곳
                 if matrix[now][next] == 1 and visited[next] == 0:
                     stack.append(next)  # stack에 추가
@@ -40,6 +40,7 @@ for test in range(Testcase):
         matrix[ni][nj] = 1
 
     DFS(S)
+    print(Path)
 
     if G in Path:
         print(f'#{test+1}', 1)
