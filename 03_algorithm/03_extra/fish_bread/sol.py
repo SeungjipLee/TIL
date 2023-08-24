@@ -13,3 +13,5 @@ for test in range(Testcase):
             check = 'Impossible'
             break
     print(f'#{test+1}', check)
+
+    01110110110001011101101100010110001000110100100110111011
