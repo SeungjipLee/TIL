@@ -12,14 +12,13 @@ for _ in range(M):
             light[k*b-1] = (light[k*b-1]+1) % 2
             k += 1
     else:
-        if b == 1 or b == N:
-            light[b-1] = (light[b-1]+1) % 2
-        else:
-            i = 1
-            while b-1-i != -1:
-                if light[b-1-i] != light[b-1+i]:
-                    break
-                i += 1
-            for j in range(b-1-i, b+i):
-                light[b] = (light[b]+1)%2
-print(light)
+        # 여자라면
+        light[b-1] = (light[b-1]+1)%2
+        i = 1
+        while (0 <= b-1-i < N) and (0 <= b-1+i < N) and (light[b-1-i] == light[b-1+i]):
+            light[b-1-i] = (light[b-1-i]+1)%2
+            light[b-1+i] = (light[b-1+i]+1)%2
+            i += 1
+P = len(light)
+for i in range(P//20 + 1):
+    print(*light[20*i:20*(i+1)])
