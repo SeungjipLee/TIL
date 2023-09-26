@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>CREATE PAGE</h1>
+
+  <form action="{% url "menus:new" %}" method="POST">
+    {% comment %} <label for="">name</label>
+    <input type="text">
+    <label for="">price</label>
+    <input type="number" name="" id="">
+    <label for="">description</label>
+    <textarea name="" id="" cols="30" rows="10"></textarea> {% endcomment %}
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="CREATE">
+  </form>
+{% endblock content %}
